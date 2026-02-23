@@ -25,6 +25,7 @@ const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)
 const state = {
   lang: "id",
   activityFilter: "all",
+  activityPriority: null,
   langCache: {},
   content: null
 };
@@ -243,6 +244,9 @@ function renderActivities(content) {
 
     btn.addEventListener("click", () => {
       state.activityFilter = category.key;
+      if (category.key !== "all") {
+        state.activityPriority = category.key;
+      }
       renderActivities(state.content);
     });
 
@@ -252,10 +256,11 @@ function renderActivities(content) {
   const labelsByKey = Object.fromEntries(activities.categories.map((cat) => [cat.key, cat.label]));
 
   dom.activityGrid.innerHTML = "";
-  activities.cards.forEach((card) => {
+  activities.cards.forEach((card, index) => {
     const article = document.createElement("article");
     article.className = "activity-card";
     article.dataset.category = card.categoryKey;
+    article.dataset.originalIndex = String(index);
     article.innerHTML = `
       <p class="activity-meta">${labelsByKey[card.categoryKey] || card.categoryKey}</p>
       <h3>${card.title}</h3>
@@ -269,13 +274,29 @@ function renderActivities(content) {
 
 function filterActivities() {
   const cards = Array.from(dom.activityGrid.querySelectorAll(".activity-card"));
-  cards.forEach((card, idx) => {
-    const shouldShow = state.activityFilter === "all" || card.dataset.category === state.activityFilter;
-    window.setTimeout(() => {
-      card.classList.toggle("hidden", !shouldShow);
-      card.setAttribute("aria-hidden", String(!shouldShow));
-    }, prefersReducedMotion ? 0 : idx * 30);
-  });
+  const priorityKey = state.activityFilter === "all" ? state.activityPriority : state.activityFilter;
+
+  cards
+    .sort((a, b) => {
+      const aPinned = priorityKey && a.dataset.category === priorityKey ? 0 : 1;
+      const bPinned = priorityKey && b.dataset.category === priorityKey ? 0 : 1;
+      if (aPinned !== bPinned) {
+        return aPinned - bPinned;
+      }
+
+      const aOriginal = Number(a.dataset.originalIndex || 0);
+      const bOriginal = Number(b.dataset.originalIndex || 0);
+      return aOriginal - bOriginal;
+    })
+    .forEach((card, idx) => {
+      dom.activityGrid.appendChild(card);
+
+      const shouldShow = state.activityFilter === "all" || card.dataset.category === state.activityFilter;
+      window.setTimeout(() => {
+        card.classList.toggle("hidden", !shouldShow);
+        card.setAttribute("aria-hidden", String(!shouldShow));
+      }, prefersReducedMotion ? 0 : idx * 30);
+    });
 }
 
 function renderTimeline(content) {
