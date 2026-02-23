@@ -1,0 +1,170 @@
+{
+  "meta": {
+    "title": "Muslim Ruhr — Indonesian Muslim Community in the Ruhr Area",
+    "description": "Muslim Ruhr is a community for Indonesian Muslims in the Ruhr area: learning circles, Ramadhan programs, gatherings, and social support.",
+    "ogTitle": "Muslim Ruhr — Indonesian Muslim Community in the Ruhr Area",
+    "ogDescription": "Community for Indonesian Muslims in Essen, Duisburg, Dortmund, and nearby: kajian, Ramadhan, Eid gatherings, and support network.",
+    "ogLocale": "en_US"
+  },
+  "brand": "Muslim Ruhr",
+  "instagramHandle": "@muslim_ruhr",
+  "ui": {
+    "skipLink": "Skip to main content",
+    "headerLabel": "Page controls",
+    "headerControlsLabel": "Display preferences",
+    "languageSwitchLabel": "Choose content language",
+    "themeLight": "Dark mode",
+    "themeDark": "Light mode",
+    "focusOff": "Focus mode",
+    "focusOn": "Focus mode: On",
+    "backToTop": "Back to top",
+    "contactLabel": "Instagram",
+    "contactHint": "Hover/focus to highlight contact info",
+    "disclaimer": "This community is volunteer-run and open for learning, sharing information, and supporting fellow diaspora members.",
+    "missionListLabel": "Community mission",
+    "activityFiltersLabel": "Filter activity categories",
+    "timelineListLabel": "Engagement steps"
+  },
+  "hero": {
+    "eyebrow": "Diaspora Community",
+    "title": "Muslim Ruhr",
+    "tagline": "Indonesian Muslim community in the Ruhr area",
+    "description": "For Indonesian Muslims in Essen, Duisburg, Dortmund, and nearby cities."
+  },
+  "sections": {
+    "about": {
+      "eyebrow": "About",
+      "title": "A place to grow in faith, connection, and mutual support",
+      "description": "Muslim Ruhr is a friendly network for religious life, social connection, and practical diaspora information.",
+      "missionCards": [
+        {
+          "title": "Faith Space",
+          "description": "Online/offline kajian sessions that keep religious learning active amid diaspora routines."
+        },
+        {
+          "title": "Warm Connections",
+          "description": "Ramadhan, Eid, and family gatherings that strengthen relationships and belonging."
+        },
+        {
+          "title": "Newcomer Support",
+          "description": "A place to ask practical questions and share tips for life in the Ruhr area."
+        },
+        {
+          "title": "Collaborative Good",
+          "description": "Volunteers support events through coordination, documentation, food, and communication."
+        }
+      ]
+    },
+    "activities": {
+      "eyebrow": "Activities",
+      "title": "Programs relevant to everyday diaspora life",
+      "description": "Pick a category to explore activities commonly run throughout the year.",
+      "categories": [
+        { "key": "all", "label": "All" },
+        { "key": "kajian", "label": "Kajian" },
+        { "key": "ramadhan", "label": "Ramadhan" },
+        { "key": "eid", "label": "Eid" },
+        { "key": "social", "label": "Social" }
+      ],
+      "cards": [
+        {
+          "categoryKey": "kajian",
+          "title": "Weekly Online Kajian",
+          "detail": "Evening online study on aqidah, fiqh, and practical daily topics."
+        },
+        {
+          "categoryKey": "kajian",
+          "title": "Offline Kajian Meetup",
+          "detail": "In-person rotating sessions in Essen/Duisburg with relaxed discussions."
+        },
+        {
+          "categoryKey": "ramadhan",
+          "title": "Ramadhan Community Iftar",
+          "detail": "Shared iftar with potluck format and family-friendly space."
+        },
+        {
+          "categoryKey": "ramadhan",
+          "title": "Ramadhan Kajian Series",
+          "detail": "Short themed sessions for reflection and worship during Ramadhan."
+        },
+        {
+          "categoryKey": "eid",
+          "title": "Halal Bihalal Gathering",
+          "detail": "Post-Eid get-together to reconnect and strengthen community ties."
+        },
+        {
+          "categoryKey": "eid",
+          "title": "Family Silaturrahim",
+          "detail": "Family-friendly event with light shared activities."
+        },
+        {
+          "categoryKey": "social",
+          "title": "Newcomer Meetup",
+          "detail": "Welcome session for new students and professionals to connect quickly."
+        },
+        {
+          "categoryKey": "social",
+          "title": "Volunteer & Social Support",
+          "detail": "Volunteer coordination for social support and practical help in the diaspora."
+        }
+      ]
+    },
+    "timeline": {
+      "eyebrow": "How It Works",
+      "title": "A simple path to get involved",
+      "description": "Click each step to expand details.",
+      "steps": [
+        {
+          "title": "1. Connect",
+          "detail": "Use the CTA to join the main channel and introduce yourself briefly."
+        },
+        {
+          "title": "2. Participate",
+          "detail": "Choose kajian, iftar, or social meetups that fit your schedule."
+        },
+        {
+          "title": "3. Build Relationships",
+          "detail": "Get to know Indonesian families in the Ruhr area and support one another."
+        },
+        {
+          "title": "4. Volunteer",
+          "detail": "Help with light committee work, documentation, food support, or info coordination."
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Frequently asked questions",
+      "description": "Click a question to reveal the answer.",
+      "items": [
+        {
+          "question": "Do I need to be an official member?",
+          "answer": "No. The community is open. You can start by joining activities and meeting people."
+        },
+        {
+          "question": "Which language is used?",
+          "answer": "Mostly Indonesian, with flexibility for DE/EN when needed."
+        },
+        {
+          "question": "Are activities online or offline?",
+          "answer": "Both. Kajian may run online/offline, while social gatherings are usually in person."
+        },
+        {
+          "question": "When does kajian usually happen?",
+          "answer": "Usually in the evening or on weekends. Schedules are shared regularly in the main channel."
+        },
+        {
+          "question": "Can I bring my family?",
+          "answer": "Yes, especially for silaturrahim, iftar, and halal bihalal events."
+        },
+        {
+          "question": "How can I help?",
+          "answer": "Tell the admin your interest; any support is valuable, from logistics to communications."
+        }
+      ]
+    },
+    "footer": {
+      "description": "Muslim Ruhr is a friendship network for Indonesian Muslims in the Ruhr area: religious, social, and information-sharing support."
+    }
+  }
+}

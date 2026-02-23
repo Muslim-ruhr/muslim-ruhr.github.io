@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="id" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Muslim Ruhr — Komunitas Muslim Indonesia di Ruhrgebiet</title>
+    <meta
+      name="description"
+      content="Muslim Ruhr adalah komunitas Muslim Indonesia di Ruhrgebiet: kajian, Ramadhan, silaturrahim, dan dukungan sosial untuk diaspora."
+    />
+    <meta property="og:title" content="Muslim Ruhr — Komunitas Muslim Indonesia di Ruhrgebiet" />
+    <meta
+      property="og:description"
+      content="Komunitas Muslim Indonesia di Essen, Duisburg, Dortmund, dan sekitar: kajian, Ramadhan, Eid, serta jejaring dukungan diaspora."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/og-image.svg" />
+    <meta property="og:locale" content="id_ID" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <a id="skipLink" class="skip-link" href="#hero">Langsung ke konten utama</a>
+
+    <div class="floating-bg" aria-hidden="true">
+      <div class="star star-a"></div>
+      <div class="star star-b"></div>
+      <div class="star star-c"></div>
+      <div class="lantern lantern-a"></div>
+      <div class="lantern lantern-b"></div>
+    </div>
+
+    <header id="siteHeader" class="site-header" aria-label="Kontrol halaman">
+      <div class="brand-pill" id="brandPill">Muslim Ruhr</div>
+      <div id="headerControls" class="header-controls" role="group" aria-label="Preferensi tampilan">
+        <button id="themeToggle" class="control-btn" type="button" aria-pressed="false">
+          Mode Gelap
+        </button>
+        <button id="focusToggle" class="control-btn" type="button" aria-pressed="false">
+          Focus Mode
+        </button>
+      </div>
+    </header>
+
+    <div class="scroll-progress" aria-hidden="true">
+      <div id="scrollProgressBar" class="scroll-progress__bar"></div>
+    </div>
+
+    <main id="mainContent" class="snap-container">
+      <section id="hero" class="panel panel-hero" aria-labelledby="heroTitle">
+        <div class="content-wrap reveal">
+          <p class="eyebrow" id="heroEyebrow">Komunitas Diaspora</p>
+          <h1 id="heroTitle">Muslim Ruhr</h1>
+          <p id="heroTagline" class="lead">Komunitas Muslim Indonesia di Ruhrgebiet</p>
+          <p id="heroDesc" class="body-copy">
+            Untuk Muslim Indonesia di Essen, Duisburg, Dortmund, dan sekitarnya.
+          </p>
+
+          <div id="languageSwitch" class="language-switch" role="group" aria-label="Pilih bahasa konten">
+            <button class="chip lang-chip is-active" data-lang="id" type="button" aria-pressed="true">ID</button>
+            <button class="chip lang-chip" data-lang="de" type="button" aria-pressed="false">DE</button>
+            <button class="chip lang-chip" data-lang="en" type="button" aria-pressed="false">EN</button>
+          </div>
+
+          <a id="heroCta" class="cta" href="#" target="_blank" rel="noopener noreferrer">
+            Lihat Instagram
+          </a>
+        </div>
+      </section>
+
+      <section id="about" class="panel panel-about" aria-labelledby="aboutTitle">
+        <div class="content-wrap split reveal">
+          <div>
+            <p class="eyebrow" id="aboutEyebrow">Tentang Kami</p>
+            <h2 id="aboutTitle">Tempat tumbuh bersama dalam iman, silaturrahim, dan saling dukung</h2>
+            <p id="aboutDesc" class="body-copy">
+              Muslim Ruhr menjadi jaringan yang ramah untuk kebutuhan religius, sosial, dan informasi diaspora Indonesia.
+            </p>
+          </div>
+          <div>
+            <div id="missionCards" class="mission-grid" role="list" aria-label="Misi komunitas"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="activities" class="panel panel-activities" aria-labelledby="activitiesTitle">
+        <div class="content-wrap reveal">
+          <p class="eyebrow" id="activitiesEyebrow">Kegiatan</p>
+          <h2 id="activitiesTitle">Program yang relevan untuk keseharian diaspora</h2>
+          <p id="activitiesDesc" class="body-copy"></p>
+
+          <div id="activityFilters" class="filter-row" role="tablist" aria-label="Filter kategori aktivitas"></div>
+          <div id="activityGrid" class="activity-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section id="timeline" class="panel panel-timeline" aria-labelledby="timelineTitle">
+        <div class="content-wrap reveal">
+          <p class="eyebrow" id="timelineEyebrow">Alur Bergabung</p>
+          <h2 id="timelineTitle">Cara sederhana untuk ikut berkontribusi</h2>
+          <p id="timelineDesc" class="body-copy"></p>
+
+          <div class="timeline-shell">
+            <div class="timeline-progress" aria-hidden="true">
+              <div id="timelineProgressFill" class="timeline-progress__fill"></div>
+            </div>
+            <ol id="timelineList" class="timeline-list" aria-label="Langkah keterlibatan"></ol>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="panel panel-faq" aria-labelledby="faqTitle">
+        <div class="content-wrap reveal">
+          <p class="eyebrow" id="faqEyebrow">FAQ</p>
+          <h2 id="faqTitle">Pertanyaan yang sering ditanyakan</h2>
+          <p id="faqDesc" class="body-copy"></p>
+
+          <div id="faqList" class="faq-list" role="list"></div>
+        </div>
+      </section>
+
+      <footer id="footer" class="panel panel-footer" aria-labelledby="footerTitle">
+        <div class="masjid-svg" aria-hidden="true">
+          <svg viewBox="0 0 1200 280" role="presentation">
+            <path
+              d="M0 260h1200v20H0zM110 260v-72h86v72zm126 0v-102h92v102zm140 0v-84h96v84zm152 0v-128h118v128zm170 0v-94h92v94zm138 0v-76h88v76zM566 132h42v-24h-42zM578 108h18V58h-18zM480 132h212c-18-30-44-52-106-72-62 20-88 42-106 72z"
+            />
+          </svg>
+        </div>
+
+        <div class="content-wrap footer-wrap reveal">
+          <h2 id="footerTitle">Muslim Ruhr</h2>
+          <p id="footerDesc" class="body-copy"></p>
+          <div class="contact-card" tabindex="0">
+            <p id="contactLabel" class="contact-label">Instagram</p>
+            <p id="instagramText" class="contact-value">@muslim_ruhr</p>
+            <p id="contactHint" class="contact-hint">Hover/focus untuk menyorot info kontak</p>
+          </div>
+          <div class="footer-actions">
+            <a id="footerCta" class="cta cta-secondary" href="#" target="_blank" rel="noopener noreferrer">Lihat Instagram</a>
+            <button id="backToTop" class="control-btn" type="button">Back to top</button>
+          </div>
+          <p id="disclaimer" class="disclaimer">Komunitas ini berbasis relawan dan terbuka untuk saling belajar, berbagi informasi, dan dukung sesama diaspora.</p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
