@@ -1,0 +1,186 @@
+window.__LANG_PACKS__ = window.__LANG_PACKS__ || {};
+window.__LANG_PACKS__.id = {
+  "meta": {
+    "title": "Muslim Ruhr — Komunitas Muslim Indonesia di Ruhrgebiet",
+    "description": "Muslim Ruhr adalah komunitas Muslim Indonesia di Ruhrgebiet: kajian, Ramadhan, silaturrahim, dan dukungan sosial untuk diaspora.",
+    "ogTitle": "Muslim Ruhr — Komunitas Muslim Indonesia di Ruhrgebiet",
+    "ogDescription": "Komunitas Muslim Indonesia di Essen, Duisburg, Dortmund, dan sekitar: kajian, Ramadhan, Eid, serta jejaring dukungan diaspora.",
+    "ogLocale": "id_ID"
+  },
+  "brand": "Muslim Ruhr",
+  "instagramHandle": "@muslim_ruhr",
+  "ui": {
+    "skipLink": "Langsung ke konten utama",
+    "headerLabel": "Kontrol halaman",
+    "headerControlsLabel": "Preferensi tampilan",
+    "languageSwitchLabel": "Pilih bahasa konten",
+    "themeLight": "Mode Gelap",
+    "themeDark": "Mode Terang",
+    "focusOff": "Focus Mode",
+    "focusOn": "Focus Mode: On",
+    "backToTop": "Back to top",
+    "contactLabel": "Instagram",
+    "contactHint": "Hover/focus untuk menyorot info kontak",
+    "disclaimer": "Komunitas ini berbasis relawan dan terbuka untuk saling belajar, berbagi informasi, dan dukung sesama diaspora.",
+    "missionListLabel": "Misi komunitas",
+    "activityFiltersLabel": "Filter kategori aktivitas",
+    "timelineListLabel": "Langkah keterlibatan"
+  },
+  "hero": {
+    "eyebrow": "Komunitas Diaspora",
+    "title": "Muslim Ruhr",
+    "tagline": "Komunitas Muslim Indonesia di Ruhrgebiet",
+    "description": "Untuk Muslim Indonesia di Essen, Duisburg, Dortmund, dan sekitarnya."
+  },
+  "sections": {
+    "about": {
+      "eyebrow": "Tentang Kami",
+      "title": "Tempat tumbuh bersama dalam iman, silaturrahim, dan saling dukung",
+      "description": "Muslim Ruhr menjadi jaringan yang ramah untuk kebutuhan religius, sosial, dan informasi diaspora Indonesia.",
+      "missionCards": [
+        {
+          "title": "Ruang Iman",
+          "description": "Kajian dan pengajian online/offline untuk menjaga semangat belajar agama di tengah rutinitas diaspora."
+        },
+        {
+          "title": "Silaturrahim Hangat",
+          "description": "Momen Ramadhan, Eid, dan pertemuan keluarga agar ikatan antarsesama tetap kuat dan saling mengenal."
+        },
+        {
+          "title": "Dukungan Pendatang Baru",
+          "description": "Tempat bertanya hal praktis dan berbagi informasi hidup di Ruhrgebiet dalam bahasa Indonesia."
+        },
+        {
+          "title": "Kolaborasi Kebaikan",
+          "description": "Relawan komunitas saling membantu penyelenggaraan acara, dokumentasi, konsumsi, dan koordinasi kegiatan."
+        }
+      ]
+    },
+    "activities": {
+      "eyebrow": "Kegiatan",
+      "title": "Program yang relevan untuk keseharian diaspora",
+      "description": "Pilih kategori untuk melihat aktivitas yang biasanya berjalan sepanjang tahun.",
+      "categories": [
+        {
+          "key": "all",
+          "label": "Semua"
+        },
+        {
+          "key": "kajian",
+          "label": "Kajian"
+        },
+        {
+          "key": "ramadhan",
+          "label": "Ramadhan"
+        },
+        {
+          "key": "eid",
+          "label": "Eid"
+        },
+        {
+          "key": "social",
+          "label": "Sosial"
+        }
+      ],
+      "cards": [
+        {
+          "categoryKey": "kajian",
+          "title": "Kajian Online Pekanan",
+          "detail": "Sesi daring malam hari dengan topik akidah, fiqih, dan adab harian."
+        },
+        {
+          "categoryKey": "kajian",
+          "title": "Kajian Offline Ruhr Tengah",
+          "detail": "Pertemuan tatap muka bergilir di Essen/Duisburg dengan diskusi santai."
+        },
+        {
+          "categoryKey": "ramadhan",
+          "title": "Iftar Ramadhan Bersama",
+          "detail": "Buka puasa komunitas dengan sistem potluck dan ruang untuk keluarga."
+        },
+        {
+          "categoryKey": "ramadhan",
+          "title": "Kajian Ramadhan",
+          "detail": "Kajian singkat tematik seputar amalan dan refleksi selama bulan suci."
+        },
+        {
+          "categoryKey": "eid",
+          "title": "Halal bihalal",
+          "detail": "Kumpul pasca-Idul Fitri untuk mempererat ukhuwah dan saling memaafkan."
+        },
+        {
+          "categoryKey": "eid",
+          "title": "Silaturrahim Keluarga",
+          "detail": "Acara ramah anak dan keluarga dengan aktivitas ringan bersama."
+        },
+        {
+          "categoryKey": "social",
+          "title": "Meet-up Pendatang Baru",
+          "detail": "Sesi kenalan untuk mahasiswa/pekerja baru agar cepat terhubung."
+        },
+        {
+          "categoryKey": "social",
+          "title": "Volunteer & Support",
+          "detail": "Koordinasi relawan untuk dukungan sosial dan bantuan sesama diaspora."
+        }
+      ]
+    },
+    "timeline": {
+      "eyebrow": "Alur Bergabung",
+      "title": "Cara sederhana untuk ikut berkontribusi",
+      "description": "Klik setiap langkah untuk melihat detail yang bisa Anda lakukan.",
+      "steps": [
+        {
+          "title": "1. Terhubung",
+          "detail": "Klik CTA untuk masuk ke kanal utama komunitas dan perkenalkan diri singkat."
+        },
+        {
+          "title": "2. Ikut Kegiatan",
+          "detail": "Pilih kajian, iftar, atau meet-up sosial yang paling sesuai jadwal Anda."
+        },
+        {
+          "title": "3. Bangun Relasi",
+          "detail": "Kenali keluarga Indonesia lain di Ruhrgebiet untuk saling dukung keseharian."
+        },
+        {
+          "title": "4. Jadi Relawan",
+          "detail": "Bantu sebagai panitia ringan, dokumentasi, konsumsi, atau koordinasi info."
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Pertanyaan yang sering ditanyakan",
+      "description": "Klik pertanyaan untuk membuka jawaban.",
+      "items": [
+        {
+          "question": "Apakah harus anggota?",
+          "answer": "Tidak. Komunitas terbuka, Anda bisa mulai dengan ikut kegiatan dan mengenal teman-teman lain."
+        },
+        {
+          "question": "Bahasa apa yang dipakai?",
+          "answer": "Mayoritas menggunakan Bahasa Indonesia, dengan fleksibilitas jika ada peserta yang lebih nyaman DE/EN."
+        },
+        {
+          "question": "Kegiatan online/offline?",
+          "answer": "Keduanya ada. Kajian bisa online atau offline, sementara acara sosial biasanya tatap muka."
+        },
+        {
+          "question": "Kapan biasanya kajian?",
+          "answer": "Umumnya malam atau akhir pekan. Jadwal diumumkan berkala melalui kanal komunitas."
+        },
+        {
+          "question": "Bisa bawa keluarga?",
+          "answer": "Bisa, terutama pada acara silaturrahim, iftar, dan halal bihalal yang ramah keluarga."
+        },
+        {
+          "question": "Bagaimana ikut membantu?",
+          "answer": "Sampaikan minat Anda ke admin; dukungan sekecil apa pun sangat berarti, dari logistik hingga publikasi."
+        }
+      ]
+    },
+    "footer": {
+      "description": "Muslim Ruhr adalah jaringan persahabatan Muslim Indonesia di Ruhrgebiet: religius, sosial, dan berbagi informasi diaspora."
+    }
+  }
+};

@@ -86,18 +86,33 @@ async function loadLanguagePack(lang) {
     throw new Error(`Language ${lang} is not configured.`);
   }
 
+  const globalPacks = window.__LANG_PACKS__ || {};
+  const useGlobalDirectly = window.location.protocol === "file:";
+  if (useGlobalDirectly && globalPacks[lang]) {
+    state.langCache[lang] = globalPacks[lang];
+    return globalPacks[lang];
+  }
+
   if (state.langCache[lang]) {
     return state.langCache[lang];
   }
 
-  const response = await fetch(LANGUAGE_FILES[lang], { cache: "no-cache" });
-  if (!response.ok) {
-    throw new Error(`Failed to load ${LANGUAGE_FILES[lang]} (${response.status})`);
-  }
+  try {
+    const response = await fetch(LANGUAGE_FILES[lang], { cache: "no-cache" });
+    if (!response.ok) {
+      throw new Error(`Failed to load ${LANGUAGE_FILES[lang]} (${response.status})`);
+    }
 
-  const data = await response.json();
-  state.langCache[lang] = data;
-  return data;
+    const data = await response.json();
+    state.langCache[lang] = data;
+    return data;
+  } catch (error) {
+    if (globalPacks[lang]) {
+      state.langCache[lang] = globalPacks[lang];
+      return globalPacks[lang];
+    }
+    throw error;
+  }
 }
 
 function setTheme(theme) {
